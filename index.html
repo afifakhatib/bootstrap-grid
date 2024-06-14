@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid understanding</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <!-- row >> flex container
+     col >> flex items 
+     breakPoint >>
+       <576px >> col-xs/col >> extra small 
+       >=576 >> col-sm >> small
+       >=768 >> col-md >> medium
+       >=992 >> col-lg >> large
+       >=1200 >> col-xl >> extra large
+        -->
+   <h2 class="alert alert-info text-dark text-center">Grid underStanding</h2>
+
+   <div class="container">
+    <div class="row mb-4">
+        <div class="col-12 col-sm-12 col-md-5 col-lg-6 col-xl-7">
+            <div class="box  mb-4">
+                col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-5 offset-md-2 col-lg-6 col-xl-5  offset-lg-0">
+            <div class="box  mb-4">
+                col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+         <div class="col-12 col-sm-12 col-md-6 col-lg-5 col-xl-4 offset-xl-2 mb-4">
+            <div class="box1">
+                xm-sm-12
+                md-6
+                lg-8
+                xl-4
+            </div>
+         </div>
+         <div class="col-12 col-sm-12 col-md-6 col-lg-5 offset-lg-2 offset-xl-0 col-xl-4 mb-4">
+            <div class="box1">
+                xm-sm-12
+                md-6
+                lg-8
+                xl-4
+            </div>
+         </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-5 col-xl-6">
+             <div class="box2">
+                xs = 12 * 2 
+                sm = 12 * 2 
+                md = 4 *  2
+                lg = 5 *  2
+                xl = 6 *  2
+             </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 offset-md-4 col-lg-5 offset-lg-2 col-xl-6 offset-xl-0">
+            <div class="box2">
+               xs = 12 * 2 
+               sm = 12 * 2 
+               md = 4 *  2
+               lg = 5 *  2
+               xl = 6 *  2
+            </div>
+       </div>
+    </div>
+   </div>
+</body>
+</html>
